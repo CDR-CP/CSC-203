@@ -1,0 +1,54 @@
+UNFINISHED
+/* this part is as comment similar to comments in Python
+CPE/CSC 203 Lab00
+Name: Corey Rogers
+
+Section:203-15
+
+*/
+public class Lab00 {
+    public static void main(String[] arguments) {
+
+        int x = 12;
+        String y = "WELCOME to CSC/CPE203";
+        float z = 3.1415f;
+        System.out.println("x:" + x + "y:" + y + "z:" + z);
+        int[] nums = new int[5];
+        nums[0] = 5;
+        nums[1] = 16;
+        nums[2] = -8;
+        nums[3] = 2;
+        nums[4] = 11;
+
+        int i;
+        for (i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+            nums[i]++;
+        }
+
+        String s = "test:abc";
+        char test_char = 'a';
+
+        int result = charCount(s, test_char);
+        System.out.println("Char " + "'" +test_char+ "'" + " Appears " + result + " time(s).");//prints test_char with single quotes ''
+
+        main(); //calls main function 
+    }
+        public static int charCount(String s, char c) {
+        int i;
+        int count = 0;
+            for ( i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == c) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+        public static void main(){}//logic/structure of main 
+
+
+
+
+
+    }
